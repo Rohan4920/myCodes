@@ -1,0 +1,5 @@
+From openjdk:12-alpine 
+copy ./app
+workdir /app
+run javac HelloJava.java
+CMD ["java", HelloJava]
